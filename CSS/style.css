@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Roboto Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --mainColor: #36f1cd;
+  --secondaryColor: #ffffff;
+  --sidebarWidth: 10vw;
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: var(--sidebarWidth) 1fr var(--sidebarWidth);
+  grid-template-rows: auto auto 1fr minmax(2rem, 5vh);
+  background: linear-gradient(
+    #001937 0%,
+    #00224a 25%,
+    #00224a 75%,
+    #001937 100%
+  );
+  /* background: linear-gradient(#001937 0%, red 25%, red 75%, #001937 100%); */
+}
+
+/* FONTS CLASSES*/
+.font-small{
+  font-size: 0.5rem;
+}
+
+.font-medium {
+  font-size: 1rem;
+}
+.font-heading {
+  font-size: 3rem;
+}
+.font-title {
+  font-size: 4rem;
+}
+
+/* TEXT COLOR CLASSES */
+.main-color {
+  color: var(--mainColor);
+}
+.secondary-color {
+  color: var(--secondaryColor);
+}
+
+.text-center{
+  text-align: center;
+}
+
+.hanging-indent {
+  padding-left: 3rem;
+  text-indent: -3rem;
+}
+
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000000;
+  grid-column: 1/-1;
+  grid-row: 1;
+}
+
+.nav-item {
+  margin: 0 2vw;
+}
+
+.title-box {
+  grid-column: 2/-1;
+  grid-row: 2;
+}
+
+.content-box {
+  grid-column: 2;
+  grid-row: 3;
+  border-radius: 5%;
+  background: #00000050;
+}
+
+.vertical-line {
+  border-left: solid 0.1875rem var(--mainColor);
+  margin-left: 50%;
+  margin-top: 1vh;
+  flex-grow: 1;
+}
+
+.flex {
+  display: flex;
+  position: fixed;
+  bottom: 0rem;
+  left: 0rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.text-rotate {
+  writing-mode: vertical-lr;
+  align-self: center;
+}
+
+.left-wrapper {
+  align-self: center;
+}
+
+.right-aside-box {
+  width: var(--sidebarWidth);
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--secondaryColor);
+}
+
+.left-aside-box {
+  height: 40vh;
+  width: var(--sidebarWidth);
+  display: flex;
+  flex-direction: column;
+  color: var(--secondaryColor);
+}
+
+.footer {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.footer>p{
+  position: relative;
+  top: 100%;
+}
+
+.logo {
+  width: 1.5rem;
+  background-color: transparent;
+}
