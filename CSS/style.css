@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
   font-family: "Roboto Mono", monospace;
 }
 
@@ -146,4 +145,53 @@ body {
 .logo {
   width: 1.5rem;
   background-color: transparent;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.p-content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.p-start {
+  padding-left: 1rem;
+}
+
+.project-container {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.project-image-container {
+  width: 33.33%;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-description {
+  width: 66.67%;
+}
+
+.border {
+  border: solid var(--mainColor) 1px;
+}
+
+.rounded {
+  border-radius: 1rem;
+}
+
+.underline {
+  text-decoration: underline;
 }
